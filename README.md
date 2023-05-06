@@ -14,7 +14,6 @@ Running the server: In a separte terminal, run the server code on your host mach
 As these are both running, the server will get the data sent from the client
 and a table of the events (brightness, temperature, and humidity) are shown!
 
-Link to demo video showing SSH-ing, and running the client and server codes: https://drive.google.com/file/d/1FkLXjrgEq57rK_AjRpx780rwuwlbJ5Vl/view?usp=sharing
-
-Link to secondary video simply showing how the LED turns on if the room is bright, and is off if the room is dark (just extra): https://drive.google.com/file/d/1p8qpZVhFQuJUb0WhExnLOrfAxNSZhmhJ/view?usp=sharing 
+Link to demo video showing node identifiations, SSH-ing int our RPi, and running the client and server codes:
+https://drive.google.com/file/d/1aX7v6emnMWPcBclLoENzL86JqnP10xJ5/view?usp=sharing 
 
