@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import numpy as np
+from PIL import Image 
 
 app = Flask(__name__)
 # TODO: Create a flask app 
@@ -25,12 +26,13 @@ def light():
 	print("Light data from sensor: "+str(light_data))
 	
 	#determine if environment is dark or bright by comparing raw data to threshold value
-	light_threshold = 200
+	light_threshold = 300
 	if light_data > light_threshold:   
 		bright = True 
 	else:
 		bright = False 
 	return(jsonify(bright)) #return boolean 
+	
 
 
 
