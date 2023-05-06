@@ -4,8 +4,6 @@
 import numpy as np
 import pandas as pd
 import requests
-import plotly.express as px
-from PIL import Image 
 import time
 import RPi.GPIO as GPIO
 import Adafruit_GPIO.SPI as SPI
