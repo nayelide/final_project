@@ -126,9 +126,6 @@ if __name__ == '__main__':
       #create a dataframe to make a bar graph 
       df = pd.DataFrame(data, columns=['sensor','mean','std'])
       print(df)
-
-      #fig = px.bar(df, x='sensor',y='mean', error_y='std')
-      #fig.write_image("sensorData.png")
       
       	
    
