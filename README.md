@@ -15,5 +15,6 @@ As these are both running, the server will get the data sent from the client
 and a table of the events (brightness, temperature, and humidity) are shown!
 
 Link to demo video showing node identifiations, SSH-ing int our RPi, and running the client and server codes:
-https://drive.google.com/file/d/1aX7v6emnMWPcBclLoENzL86JqnP10xJ5/view?usp=sharing 
+https://drive.google.com/file/d/1aX7v6emnMWPcBclLoENzL86JqnP10xJ5/view?usp=sharing & 
+Secondary video show casing the bar graph image generated on our client: https://drive.google.com/file/d/1aKzN9DqhX397BXRETPsaM0pIDV8T0JzC/view?usp=sharing 
 
