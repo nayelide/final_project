@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 import numpy as np
-from PIL import Image 
 
 app = Flask(__name__)
 # TODO: Create a flask app 
