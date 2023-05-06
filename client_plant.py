@@ -1,20 +1,23 @@
+# team member 1: Nayeli De Leon
+# team member 2: Michelle Arredondo
+ 
 import numpy as np
 import pandas as pd
 import requests
 import plotly.express as px
-    
-#this program collects temperature, humidity, and light data from Grove analog sensor and then
-#offloads data by using POST requests to server. Server converts data and returns converted data and a boolean.
-#This program collects 5 samples of converted data and produces a bar graph. The returned boolean either enables 
-#or disables an LED lighting up.
-    
-# team member 1: Nayeli De Leon
-# team member 2: Michelle Arredondo 
-
+from PIL import Image 
 import time
 import RPi.GPIO as GPIO
 import Adafruit_GPIO.SPI as SPI
 import Adafruit_MCP3008
+    
+#this program collects temperature, humidity, and light data from Grove analog sensor and then
+#offloads data by using POST requests to server. Server converts data and returns converted data and a boolean.
+#This program collects 5 samples of converted data and prints mean and standard deviation values. The returned boolean either enables 
+#or disables an LED lighting up.
+
+
+
 
 url = 'http://172.20.10.10:5000'
 
@@ -126,8 +129,9 @@ if __name__ == '__main__':
       df = pd.DataFrame(data, columns=['sensor','mean','std'])
       print(df)
 
-      fig = px.bar(df, x='sensor',y='mean', error_y='std')
-      fig.show()
+      #fig = px.bar(df, x='sensor',y='mean', error_y='std')
+      #fig.write_image("sensorData.png")
+      
       	
    
       # cleanup LED pin
